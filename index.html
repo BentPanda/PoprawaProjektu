@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matteofy - Audio Biblioteka</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Matteofy</h1>
+      </div>
+      <div>
+        <img src="image.png" alt="Logo" style="width: 100px; height: 100px" />
+      </div>
+    </header>
+    <div class="filters">
+      <select id="genreSelect">
+        <option value="all">Wszystkie gatunki</option>
+      </select>
+      <select id="tempoSelect">
+        <option value="all">Każde tempo</option>
+        <option value="slow">Wolne (&lt;110 bpm)</option>
+        <option value="medium">Średnie (110-130 bpm)</option>
+        <option value="fast">Szybkie (&gt;130 bpm)</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Wpisz frazę..." />
+      <button id="sortByLength">Sortuj wg długości</button>
+      <button id="favoriteFilter">Sortuj przez ulubione</button>
+    </div>
+    <table id="songsTable">
+      <thead>
+        <tr>
+          <th>Artysta</th>
+          <th>Tytuł</th>
+          <th>Gatunek</th>
+          <th>Tempo (bpm)</th>
+          <th>Długość</th>
+          <th>Ulubione</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
